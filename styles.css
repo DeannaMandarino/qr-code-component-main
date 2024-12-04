@@ -37,7 +37,7 @@ body {
   background-color: var(--container-color);
   text-align: center;
   padding: 1.5rem;
-  width: 29rem;
+  width: 30rem;
   border-radius: 1.5rem;
   box-shadow: 0.5rem 0.5rem 1.2rem var(--box-shadow-color);
 }
@@ -52,12 +52,13 @@ body {
 /* Title styling */
 .title {
   color: var(--dark-text);
-  font-size: 2rem;
+  font-size: 2.3rem;
 }
 
 /* Instruction styling */
 .instructions {
   color: var(--light-text);
+  font-size: 1.6rem;
 }
 
 /* Margin-bottom for qr-code, title, instructions, and attribution for consistent spacing */
