@@ -1,22 +1,36 @@
 body {
   background-color: hsl(212, 45%, 89%);
-  text-align: center;
   font-size: 15px;
   font-family: Outfit, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
 .container {
   background-color: hsl(0, 0%, 100%);
-  margin: auto;
+  text-align: center;
   padding: 15px;
   width: 250px;
   border-radius: 15px;
+  box-shadow:  0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .qr-code {
   width: 250px;
   height: 100%;
   border-radius: 8px;
+}
+
+.title {
+  color: hsl(218, 44%, 22%);
+  font-size: 20px;
+}
+
+.instructions {
+  color: hsl(216, 15%, 48%);
 }
 
 .attribution { 
