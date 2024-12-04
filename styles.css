@@ -5,6 +5,12 @@ body {
   font-family: Outfit, sans-serif;
 }
 
+.qr-code {
+  width: 250px;
+  height: 100%;
+  border-radius: 8px;
+}
+
 .attribution { 
   font-size: 11px;
 }
