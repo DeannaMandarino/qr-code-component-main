@@ -5,6 +5,14 @@ body {
   font-family: Outfit, sans-serif;
 }
 
+.container {
+  background-color: hsl(0, 0%, 100%);
+  margin: auto;
+  padding: 15px;
+  width: 250px;
+  border-radius: 15px;
+}
+
 .qr-code {
   width: 250px;
   height: 100%;
