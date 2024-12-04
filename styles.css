@@ -1,6 +1,12 @@
+body {
+  background-color: hsl(212, 45%, 89%);
+  text-align: center;
+  font-size: 15px;
+  font-family: Outfit, sans-serif;
+}
+
 .attribution { 
-  font-size: 11px; 
-  text-align: center; 
+  font-size: 11px;
 }
 
 .attribution a { 
