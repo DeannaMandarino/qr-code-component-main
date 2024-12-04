@@ -1,3 +1,6 @@
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
 /* Color variables */
 :root {
   --background-color: rgb(214, 226, 240);
@@ -20,72 +23,60 @@ html {
   font-size: 62.5%;
 }
 
-/* Body styling */
 body {
   background-color: var(--background-color);
   font-size: 1.5rem;
-  font-family: Outfit, sans-serif;
+  font-family: 'Outfit', sans-serif;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 4rem 0;
 }
 
-/* Main container styling */
-.container {
+.qr-code {
   background-color: var(--container-color);
   text-align: center;
   padding: 1.5rem;
-  width: 30rem;
+  width: 95%;
+  max-width: 30rem; 
   border-radius: 1.5rem;
   box-shadow: 0.5rem 0.5rem 1.2rem var(--box-shadow-color);
 }
 
-/* QR code image styling */
-.qr-code {
+.qr-code__image {
   width: 100%;
   height: auto;
   border-radius: 0.8rem;
 }
 
-/* Title styling */
-.title {
+.qr-code__title {
   color: var(--dark-text);
   font-size: 2.3rem;
 }
 
-/* Instruction styling */
-.instructions {
+.qr-code__instructions {
   color: var(--light-text);
   font-size: 1.6rem;
 }
 
-/* Margin-bottom for qr-code, title, instructions, and attribution for consistent spacing */
-.qr-code, .title, .instructions, .attribution {
+.qr-code__image, .qr-code__title, .qr-code__instructions {
   margin-bottom: 1.5rem;
 }
 
-/* Attribution styling */
 .attribution { 
   font-size: 1.1rem;
   color: var(--light-text);
+  margin-top: 2rem;
+  text-align: center;
 }
 
-/* Attribution link styling */
 .attribution a { 
   color: var(--link-color); 
   text-decoration: none;
 }
 
-/* Hover effect for accessibility */
 .attribution a:hover {
   text-decoration: underline;
-}
-
-/* Media query for responsive design */
-@media (max-width: 480px) {
-  body {
-    margin: 3rem 0;
-  }
 }
