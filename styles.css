@@ -1,42 +1,90 @@
+/* Color variables */
+:root {
+  --background-color: rgb(214, 226, 240);
+  --container-color: rgb(255, 255, 255);
+  --box-shadow-color: rgba(0, 0, 0, 0.1);
+  --dark-text: rgb(31, 50, 81);
+  --light-text: rgb(104, 119, 141);
+  --link-color: rgb(62, 82, 163);
+}
+
+/* Global reset for padding, margin, and box-sizing */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Setting the root font size to 62.5% for easy rem-based sizing */
+html {
+  font-size: 62.5%;
+}
+
+/* Body styling */
 body {
-  background-color: hsl(212, 45%, 89%);
-  font-size: 15px;
+  background-color: var(--background-color);
+  font-size: 1.5rem;
   font-family: Outfit, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin: 0;
+  margin: 6rem 0;
 }
 
+/* Main container styling */
 .container {
-  background-color: hsl(0, 0%, 100%);
+  background-color: var(--container-color);
   text-align: center;
-  padding: 15px;
-  width: 250px;
-  border-radius: 15px;
-  box-shadow:  0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  width: 29rem;
+  border-radius: 1.5rem;
+  box-shadow: 0.5rem 0.5rem 1.2rem var(--box-shadow-color);
 }
 
+/* QR code image styling */
 .qr-code {
-  width: 250px;
-  height: 100%;
-  border-radius: 8px;
+  width: 100%;
+  height: auto;
+  border-radius: 0.8rem;
 }
 
+/* Title styling */
 .title {
-  color: hsl(218, 44%, 22%);
-  font-size: 20px;
+  color: var(--dark-text);
+  font-size: 2rem;
 }
 
+/* Instruction styling */
 .instructions {
-  color: hsl(216, 15%, 48%);
+  color: var(--light-text);
 }
 
+/* Margin-bottom for qr-code, title, instructions, and attribution for consistent spacing */
+.qr-code, .title, .instructions, .attribution {
+  margin-bottom: 1.5rem;
+}
+
+/* Attribution styling */
 .attribution { 
-  font-size: 11px;
+  font-size: 1.1rem;
+  color: var(--light-text);
 }
 
+/* Attribution link styling */
 .attribution a { 
-  color: hsl(228, 45%, 44%); 
+  color: var(--link-color); 
+  text-decoration: none;
+}
+
+/* Hover effect for accessibility */
+.attribution a:hover {
+  text-decoration: underline;
+}
+
+/* Media query for responsive design */
+@media (max-width: 480px) {
+  body {
+    margin: 3rem 0;
+  }
 }
